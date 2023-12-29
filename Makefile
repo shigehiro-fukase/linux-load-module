@@ -1,4 +1,7 @@
 #CROSS_COMPILE = aarch64-poky-linux
+ifneq ($(CROSS_COMPILE),"")
+CC		= $(CROSS_COMPILE)gcc
+endif
 ifeq ($(CC),"")
 CC		= $(CROSS_COMPILE)gcc
 endif
@@ -9,9 +12,6 @@ CFLAGS		+= -Wall
 #CFLAGS		+= -Wstrict-prototypes
 #CFLAGS		+= -Wmissing-prototypes
 CFLAGS		+= -W
-CFLAGS		+= -Wall
-#CFLAGS		+= -static
-#CFLAGS		+= -nostdinc
 #CFLAGS		+= -nostdlib
 #CFLAGS		+= -fno-builtin
 #CFLAGS		+= -ffreestanding
