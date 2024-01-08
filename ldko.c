@@ -176,7 +176,7 @@ static int usage(int argc, const char * argv[]) {
             "OPTIONS"NL
             "-h, --help         Show this message"NL
             "--system           Set load modlue method: insmod command via system()"NL
-            "--init_module      Set load modlue method: init_module()"NL
+            "--init_module      Set load modlue method: init_module() (default)"NL
             "--finit_module     Set load modlue method: finit_module()"NL
             ""NL
             , argv[0]);
