@@ -23,7 +23,7 @@ static int usage(int argc, const char * argv[]);
 #define METHOD_SYSTEM 0
 #define METHOD_INIT_MODULE 1
 #define METHOD_FINIT_MODULE 2
-int opt_method = METHOD_SYSTEM; // 0:system() 1:init_module 2:finit_module
+int opt_method = METHOD_INIT_MODULE; // 0:system() 1:init_module 2:finit_module
 int opt_file = 0;
 
 size_t rfsz = 0;
@@ -167,7 +167,7 @@ int main(int argc, const char * argv[]) {
 
 static int usage(int argc, const char * argv[]) {
     printf(
-            "usage: %s [OPTIONS] CPU ADDRESS FILE"NL
+            "usage: %s [OPTIONS] FILE"NL
             ""NL
             "Load module file (*.ko)."NL
             ""NL
