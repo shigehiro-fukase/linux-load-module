@@ -1,4 +1,4 @@
-// SPCX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
 
 #define _LARGEFILE64_SOURCE
 #include <stdint.h>
