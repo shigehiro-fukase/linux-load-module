@@ -166,6 +166,7 @@ int main(int argc, const char * argv[]) {
 }
 
 static int usage(int argc, const char * argv[]) {
+    (void)argc;
     printf(
             "usage: %s [OPTIONS] FILE"NL
             ""NL
