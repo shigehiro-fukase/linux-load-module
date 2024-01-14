@@ -57,6 +57,7 @@ static inline void* file_ldmem(const char * path, size_t * rlen) {
     }
 
 L_RETURN:
+    (void)ret;
     if (fd >= 0) close(fd);
     return va;
 }
